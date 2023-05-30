@@ -1,0 +1,23 @@
+.container {
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+    background: var(--color-bg);
+    max-height: 56px;
+    stroke: #18213C;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Manrope;
+}
+
+.navbar-brandname {
+    margin-left: 10px;
+}
