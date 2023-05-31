@@ -2,7 +2,8 @@ import Logo from '../assets/Standard Collection 26.svg'
 
 const NavBar = () => {
     return (
-        <div className="flex flex-row bg-gray-200 py-2 px-8 font-mono items-center justify-between bg-cover md:flex-col md:gap-4 border-b-2">
+        <div className="flex flex-row bg-gray-200 py-2 px-8 font-mono items-center justify-between bg-cover md:flex-col
+        md:gap-4 border-b-2 border-gray-300">
             <div className="left-group flex flex-row gap-20 md:flex-col md:gap-2">
                 <div className="logo-group flex flex-row items-center">
                     <img className="h-12" src={Logo}/>
