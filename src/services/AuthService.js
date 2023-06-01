@@ -3,12 +3,18 @@ import axios from 'axios'
 const baseUrl = "http://localhost:8080/api/auth"
 
 class AuthService {
-    async login(email, password) {
-        let response = {status: 400};
+
+    async register(email, username, password) {
         try {
-            console.log(baseUrl + "/authenticate")
-            response = await axios.post(baseUrl + "/authenticate", {email, password})
-            return response
+            return await axios.post(baseUrl + "/register", {email, username, password})
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    async login(email, password) {
+        try {
+            return await axios.post(baseUrl + "/authenticate", {email, password})
         } catch (e) {
             console.error(e)
         }

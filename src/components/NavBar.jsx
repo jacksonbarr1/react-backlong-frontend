@@ -1,8 +1,8 @@
 import Logo from '../assets/Standard Collection 26.svg'
 
-const NavBar = ({ onLoginClick }) => {
+const NavBar = ({ onLoginClick, onSignupClick, isLoggedIn }) => {
 
-
+    /* TODO conditional render based on isLoggedIn prop   */
 
 
     return (
@@ -21,7 +21,7 @@ const NavBar = ({ onLoginClick }) => {
 
             <div className="button-group flex flex-row gap-2" >
                 <button onClick={onLoginClick} className="bg-blue-500 hover:bg-blue-600 font-bold rounded px-2 py-1 text-white">Log In</button>
-                <button className="bg-blue-500 hover:bg-blue-600 font-bold rounded px-2 py-1 text-white">Sign Up</button>
+                <button onClick={onSignupClick} className="bg-blue-500 hover:bg-blue-600 font-bold rounded px-2 py-1 text-white">Sign Up</button>
             </div>
 
         </div>
