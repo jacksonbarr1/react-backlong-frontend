@@ -18,7 +18,6 @@ const LoginPopUp = ({ onClose, onLogin }) => {
         e.preventDefault()
         try {
             const response = await AuthService.login(email, password)
-            console.log(response.toString())
             if (response.status === 201) {
                 onLogin(response.data)
             }
